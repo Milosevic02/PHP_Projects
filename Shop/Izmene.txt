@@ -1,0 +1,27 @@
+1. Kada proizvod nema sliku da se prikazuje ikonica(no-product)
+2. Posto je bila greska da neko ko nije ulogovan moze da udje u view prodoct i izabere
+kolicinu i stisne add to cart a mi nemamo onda njegov id ako nije ulogovan i izbaci gresku
+promenio sam da kad nije ulogovan moze da udje u view product ali mu ne izlazi input za kolicinu
+i add to cart isto sam uradio i kad je korisnik admin 
+3. Kada korisnik stisne view product da mu pokaze ikonicu za no-product
+4. Stavio sam modal iz bootstrap da kad neko stisne add to cart bira da li zeli da nastavi
+kupovinu ili zeli  da ide u korpu . Ako zeli da nastavi vraca ga na index.php ako ne onda u cart.php
+5. Namestio sam da se u cart prikazuju slike proizvoda 
+6. Stavio sam u cart da ima total koji racuna sve ukupnu cenu ordera
+7. Namestio sam slike u order da se prikazuju
+8. Kada se admin uloguje ima opciju u meniju Manage Product kako bi otisao na admin/index.php
+9. Dodao sam header i footer za admina
+10. Sredio sam formu za edit product da izgleda lepse i napravio da ispise poruku ako se
+uspesno edituje proizvod
+11. Stavio sam u edit da se moze update nova slika
+12. Sredio sam izgled Add product
+13. Napravio sam da postoji opcija za admina Order list gde mu se prikazu svi orderi
+podelio sam to da se ako je neki korisnik napravio vise ordera spoje u jedan(znam da je
+verovatno prakticnije da sam delio po orderima ali ovako mi je izgledalo komplikovanije
+da vezbam upite u bazu pa sam tako radio) i da moze admin da prihvati te ordere
+14. Napravio sam metodu get_orders_by_id u Order.php kako bih mogao ispisati te narudzbine
+15. Napravio sam metodu get_name_by_id  u User.php kako bih dobio ime korisnika da lepse ispisem
+16. Napravio sam da kada admin confirma order da se obrise iz baze da simuliram kao da
+se order desio.
+17. Obezbedio sam za svaki fajl da se ne moze uci preko url ako nije admin i kad neko pokusa 
+redirektuje ga na index.php
